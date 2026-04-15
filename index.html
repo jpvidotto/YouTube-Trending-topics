@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Tendências: YouTube Trending Topics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden border border-slate-200">
+        <!-- Cabeçalho -->
+        <header class="bg-[#FF0000] p-8 text-white text-center">
+            <div class="flex justify-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+            </div>
+            <h1 class="text-3xl font-bold mb-2">YouTube Trending Topics</h1>
+            <p class="text-red-100 opacity-90">Análise de Dados baseada no Painel Gerado via Tableau</p>
+        </header>
+
+        <div class="p-8 space-y-8">
+            <!-- Seção 1 -->
+            <section>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-2 h-8 bg-red-600 rounded-full"></div>
+                    <h2 class="text-2xl font-bold text-slate-900">1. Categorias com Maior Frequência</h2>
+                </div>
+                <p class="text-slate-600 mb-6 italic">As categorias que dominam a seção "Em Alta" com maior constância:</p>
+                
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="p-4 bg-slate-50 border border-slate-100 rounded-xl hover:shadow-md transition-shadow">
+                        <span class="block text-sm font-semibold text-red-600 uppercase mb-1">Top #1 Global</span>
+                        <h3 class="text-lg font-bold mb-2">Entretenimento</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Categoria soberana devido ao seu apelo de massa e diversidade de formatos.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border border-slate-100 rounded-xl hover:shadow-md transition-shadow">
+                        <span class="block text-sm font-semibold text-red-600 uppercase mb-1">Top #2 Engajamento</span>
+                        <h3 class="text-lg font-bold mb-2">Música</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Frequentemente ocupa o topo em termos de recorrência de visualizações e retenção.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border border-slate-100 rounded-xl hover:shadow-md transition-shadow">
+                        <span class="block text-sm font-semibold text-red-600 uppercase mb-1">Estabilidade</span>
+                        <h3 class="text-lg font-bold mb-2">Comédia</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Conteúdo humorístico mantém uma presença estável no algoritmo de tendências.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border border-slate-100 rounded-xl hover:shadow-md transition-shadow">
+                        <span class="block text-sm font-semibold text-red-600 uppercase mb-1">Recorrência</span>
+                        <h3 class="text-lg font-bold mb-2">Pessoas e Blogs</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Vlogs e conteúdos pessoais são pilares fundamentais da plataforma.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção 2 -->
+            <section>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-2 h-8 bg-red-600 rounded-full"></div>
+                    <h2 class="text-2xl font-bold text-slate-900">2. Distribuição Geográfica</h2>
+                </div>
+                <div class="bg-slate-900 text-slate-300 p-6 rounded-2xl shadow-inner">
+                    <p class="mb-4 text-sm uppercase tracking-wider font-semibold">Volume de Eventos por Região</p>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1 text-sm"><span>Estados Unidos (EUA)</span><span>23.7%</span></div>
+                            <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden"><div class="bg-red-500 h-full" style="width: 23.7%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1 text-sm"><span>França</span><span>22.2%</span></div>
+                            <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden"><div class="bg-red-500 h-full" style="width: 22.2%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1 text-sm"><span>Rússia</span><span>21.7%</span></div>
+                            <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden"><div class="bg-red-500 h-full" style="width: 21.7%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1 text-sm"><span>Índia</span><span>21.6%</span></div>
+                            <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden"><div class="bg-red-500 h-full" style="width: 21.6%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1 text-sm"><span>Japão</span><span>10.8%</span></div>
+                            <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden"><div class="bg-red-500 h-full" style="width: 10.8%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção 3 -->
+            <section>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-2 h-8 bg-red-600 rounded-full"></div>
+                    <h2 class="text-2xl font-bold text-slate-900">3. Estados Unidos vs. Global</h2>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
+                        <h3 class="text-lg font-bold text-red-700 mb-3 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            Popularidade nos EUA
+                        </h3>
+                        <p class="text-slate-700 text-sm">Além de Música, os EUA apresentam força em <strong>Howto & Style</strong> e <strong>Science & Technology</strong>, indicando um interesse maior em conteúdo utilitário e geek.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <h3 class="text-lg font-bold text-slate-700 mb-3 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            Diferenças Regionais
+                        </h3>
+                        <p class="text-slate-700 text-sm">Na <strong>Índia</strong> e <strong>Rússia</strong>, a categoria <strong>News & Politics</strong> é muito mais frequente, enquanto o <strong>Japão</strong> prioriza nichos culturais específicos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Conclusão -->
+            <footer class="mt-8 border-t border-slate-200 pt-8 text-center">
+                <p class="text-slate-600 mb-4 max-w-2xl mx-auto">
+                    O relatório indica que os EUA funcionam como um hub de entretenimento e estilo de vida, enquanto outras regiões mostram um consumo mais voltado para notícias locais.
+                </p>
+                <div class="text-xs text-slate-400">
+                    Fonte dos dados: <a href="https://public.tableau.com/app/profile/jo.o.dias6924/viz/TrendingtopicsYouTube/Painel1" class="text-red-500 hover:underline">Tableau Public - João Dias</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
